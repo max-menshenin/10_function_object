@@ -35,6 +35,21 @@ const personGenerator = {
             "id_10": "Андрей"
         }
     }`,
+    patronymicFemaleJson: `{
+        "count": 10,
+        "list": {     
+            "id_1": "Александровна",
+            "id_2": "Максимовна",
+            "id_3": "Ивановна",
+            "id_4": "Артемовна",
+            "id_5": "Дмитриевна",
+            "id_6": "Никитовна",
+            "id_7": "Михаиловна",
+            "id_8": "Данииловна",
+            "id_9": "Егоровна",
+            "id_10": "Андреевна"
+    }
+    }`,
     firstNameFemaleJson: `{
         "count": 10,
         "list": {     
@@ -83,4 +98,3 @@ const personGenerator = {
         return this.person;
     }
 };
-//
