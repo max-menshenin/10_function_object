@@ -43,7 +43,7 @@ const personGenerator = {
             "id_3": "Ивановна",
             "id_4": "Артемовна",
             "id_5": "Дмитриевна",
-            "id_6": "Никитовна",
+            "id_6": "Никитична",
             "id_7": "Михаиловна",
             "id_8": "Данииловна",
             "id_9": "Егоровна",
@@ -65,6 +65,23 @@ const personGenerator = {
             "id_10": "Анастасия"
         }
     }`,
+    occupationFemaleJson: `{
+        "count": 11,
+        "list": {
+            "id_1": "Программистка",
+            "id_2": "Менеджер по рекламе",
+            "id_3": "Актрисса",
+            "id_4": "Дизайнер",
+            "id_5": "Швея",
+            "id_6": "Специалист по туризму",
+            "id_7": "деревообработчик",
+            "id_8": "Юрист",
+            "id_9": "Бухгалтер",
+            "id_10": "Психолог ",
+            "id_11": "Журналист"
+    }
+    }`,
+
 
     GENDER_MALE: 'Мужчина',
     GENDER_FEMALE: 'Женщина',
@@ -77,14 +94,14 @@ const personGenerator = {
         return obj.list[prop];
     },
 
-    randomFirstName: function() {
+    randomFirstName: function () {
 
         return this.randomValue(this.firstNameMaleJson);
 
     },
 
 
-     randomSurname: function() {
+    randomSurname: function () {
 
         return this.randomValue(this.surnameJson);
 
