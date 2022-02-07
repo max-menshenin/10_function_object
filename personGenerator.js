@@ -50,7 +50,7 @@ const personGenerator = {
             "id_10": "Анастасия"
         }
     }`,
-    
+
 	patronymicFemaleJson: `{
 	"count": 10,
 	"list": {
