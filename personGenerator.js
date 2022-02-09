@@ -51,7 +51,7 @@ const personGenerator = {
         }
     }`,
 
-patronymicMaleJson: `{
+	patronymicMaleJson: `{
 	"count": 10,
 	"list": {
 		"id_1": "Александрович",
@@ -98,7 +98,7 @@ patronymicMaleJson: `{
 		"id_11": "журналист"
 }
 }`,
-occupationFemaleJson: `{
+	occupationFemaleJson: `{
     "count": 11,
     "list": {
         "id_1": "программистка",
@@ -140,7 +140,7 @@ occupationFemaleJson: `{
 
 	randomValue(json) {
 		const obj = JSON.parse(json);
-		const prop = `id_${this.randomIntNumber(obj.count, 1)}`;  // this = personGenerator
+		const prop = `id_${this.randomIntNumber(obj.count, 1)}`; // this = personGenerator
 		return obj.list[prop];
 	},
 
@@ -202,11 +202,9 @@ occupationFemaleJson: `{
 
 		if (this.person.birthMonth === "апреля" || this.person.birthMonth === "июня" || this.person.birthMonth === "сентября" || this.person.birthMonth === "ноября") {
 			return this.randomIntNumber(1, 30);
-		}
-		else if (this.person.birthMonth === "февраля") {
+		} else if (this.person.birthMonth === "февраля") {
 			return this.randomIntNumber(1, 28);
-		}
-		else {
+		} else {
 			return this.randomIntNumber(1, 31);
 		}
 
