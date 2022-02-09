@@ -188,7 +188,7 @@ const personGenerator = {
 
 	randomBirth() {
 
-		return this.randomIntNumber(2007, 1991);
+		return this.randomIntNumber(2000, 1991);
 
 	},
 
